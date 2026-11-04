@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void main(){
+  // Subject names
   List<String> subjects = [
     'Bangla',
     'English',
@@ -8,9 +9,10 @@ void main(){
     'Science',
     'ICT'
   ];
-
+  // List to store marks for each subject
   List<double> marks = [];
-
+  
+  // Input marks for each subject
   for (int i = 0; i < subjects.length; i++) {
     print('Enter marks for ${subjects[i]}:');
     double mark = double.parse(stdin.readLineSync()!);
